@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>lista de SuperMercado</title>
+</head>
+<body>
+    <header>
+        <h2>Lista de SuperMercado</h2>
+    </header>
+    <div class="listaCadastro">
+        <input type="text" placeholder="Nome do Produto..." name="nomeProduto">
+        <input type="number" placeholder="Quantidade do Produto..." name="quantidadeProduto">
+        <input type="number" placeholder="Valor do Produto..." name="valorProduto" step="0.01" title="This should be a number with up to 2 decimal">
+        <input type="submit" name="acao" value="Cadastrar">
+    </div>
+
+    <div class="listaProduto">
+        <div class="listaProdutoSingle">
+            <h3>Produto:</h3>
+            <h3>Quantidade do Produto:</h3>
+            <h3 class="precoProduto"><span>Valor do Produto:</span></h3>
+            <h3 class="totalProduto"><span> Valor Total:</span></h3>
+        </div>
+    </div>
+
+    <div class="somaProduto">
+        <h1>Total: R$0</h1>
+    </div>
+
+    <button class="limpar" name="limpar" >limpar</button>
+    <script src="script.js"></script>
+</body>
+</html>
